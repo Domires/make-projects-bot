@@ -29,9 +29,7 @@ async function admin(ctx, next) {
 
 async function chat(ctx, next) {
     const chatId = ctx.chat.id
-
     const CHAT_ID = Number('')
-
     if(chatId !== CHAT_ID) return ctx.reply('Acesso negado!')
     return next()
 }
